@@ -1,13 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Ecommerce App</title>
+    <script defer type="module" src="src/main.js"></script>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="./src/main.js"></script>
+    <header>
+      <div class="container">
+        <a href=""><img src="vite.svg" alt="Logo" /></a>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="cart">
+          <a href="#">Cart</a>
+          <span>0 items</span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <h1>Products</h1>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="vite.svg" alt="Product 1" />
+              <h2>Product 1</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                tincidunt justo eu lectus tincidunt, ut scelerisque felis
+                luctus. Nullam egestas quam at lorem tristique, eu luctus magna
+                consectetur.
+              </p>
+              <p>\$10.00</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="vite.svg" alt="Product 2" />
+              <h2>Product 2</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                tincidunt justo eu lectus tincidunt, ut scelerisque felis
+                luctus. Nullam egestas quam at lorem tristique, eu luctus magna
+                consectetur.
+              </p>
+              <p>\$20.00</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="vite.svg" alt="Product 3" />
+              <h2>Product 3</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                tincidunt justo eu lectus tincidunt, ut scelerisque felis
+                luctus. Nullam egestas quam at lorem tristique, eu luctus magna
+                consectetur.
+              </p>
+              <p>\$30.00</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <p>Copyright &copy; 2023 My Ecommerce Store</p>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
