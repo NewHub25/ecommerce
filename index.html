@@ -10,24 +10,42 @@
   <body>
     <header class="home-search">
       <nav class="home-search__nav">
-        <input class="home-search__input" type="search" name="button-search" id="btn-search">
+        <img src="img/melvin-buezo-shoes.jpg" alt="Product 1" />
+        <input
+          class="home-search__input"
+          type="search"
+          name="button-search"
+          id="btn-search"
+        />
+        <a href="#" class="header__a">login</a>
       </nav>
     </header>
-    <nav class="nav">
-      <div class="cart">
-        <a href="#">Cart</a>
-        <span>0 items</span>
-      </div>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-    </nav>
-    <main>
-      <div class="container">
-        <h1>Products</h1>
+    <picture class="banner">
+      <source
+        srcset="ksenia-chernaya-clothes.jpg"
+        media="(min-width: 1000px)"
+      />
+      <source
+        srcset="polina-tankilevitch-clothes.jpg"
+        media="(min-width: 768px)"
+      />
+      <img src="rdne-stock-project.jpg" alt="Hermosas ropas" />
+    </picture>
+    <section class="store">
+      <aside class="menu store__aside">
+        <div class="cart">
+          <a href="#">Cart</a>
+          <span>0 items</span>
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </aside>
+      <main class="store__main">
+        <h1>CLOTHES</h1>
         <ul>
           <li>
             <a href="#">
@@ -39,48 +57,19 @@
                 luctus. Nullam egestas quam at lorem tristique, eu luctus magna
                 consectetur.
               </p>
-              <p>\$10.00</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/melvin-buezo-shoes.jpg" alt="Product 2" />
-              <h2>Product 2</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                tincidunt justo eu lectus tincidunt, ut scelerisque felis
-                luctus. Nullam egestas quam at lorem tristique, eu luctus magna
-                consectetur.
-              </p>
-              <p>\$20.00</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/melvin-buezo-shoes.jpg" alt="Product 3" />
-              <h2>Product 3</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                tincidunt justo eu lectus tincidunt, ut scelerisque felis
-                luctus. Nullam egestas quam at lorem tristique, eu luctus magna
-                consectetur.
-              </p>
-              <p>\$30.00</p>
+              <p>\.00</p>
             </a>
           </li>
         </ul>
-      </div>
-    </main>
-    <footer>
-      <div class="container">
-        <p>Copyright &copy; 2023 My Ecommerce Store</p>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
-    </footer>
+        <footer>
+          <form action="">
+            <input type="text" />
+            <input type="email" />
+            <input type="reset" />
+            <input type="submit" />
+          </form>
+        </footer>
+      </main>
+    </section>
   </body>
 </html>

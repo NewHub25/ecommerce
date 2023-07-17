@@ -1,5 +1,9 @@
 @import "./reset.css";
+@import "./custom/button.css";
 @import "./home-search.sass";
+@import "./banner.sass";
+@import "./store.sass";
+@import "./menu.sass";
 
 :root {
   font-synthesis: none;
@@ -11,6 +15,10 @@
   color-scheme: light dark;
 }
 
+body{
+  min-height: 100vh;
+  min-height: 100dvh;
+}
 img {
   width: 100px;
   height: 100px;

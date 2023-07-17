@@ -1,0 +1,24 @@
+.header__a {
+  -moz-box-shadow: 1px 1px 5px 0px #9fb4f2;
+  -webkit-box-shadow: 1px 1px 5px 0px #9fb4f2;
+  box-shadow: 1px 1px 5px 0px #9fb4f2;
+  background-color: #3c47c2;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Courier New;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 16px 33px;
+  text-decoration: none;
+}
+.header__a:hover {
+  background-color: #5b41ba;
+}
+.header__a:active {
+  position: relative;
+  top: 1px;
+}
