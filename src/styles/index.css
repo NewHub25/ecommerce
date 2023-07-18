@@ -1,5 +1,8 @@
 @import "./reset.css";
+@import "./custom/title.sass";
+@import "./custom/car.sass";
 @import "./custom/button.css";
+@import "./custom/button2.css";
 @import "./custom/input.css";
 @import "./custom/icon_fashion.sass";
 @import "./custom/mask-hide.scss";
@@ -25,6 +28,10 @@ body {
   background-color: #ddd;
   min-height: 100vh;
   min-height: 100dvh;
+}
+a{
+  text-decoration: none;
+  color: inherit;
 }
 img {
   width: 100px;

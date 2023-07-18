@@ -1,8 +1,8 @@
 .header__a {
-  box-shadow: 2px 2px 5px 1px #0a0c80;
-  background: linear-gradient(to bottom, #4d23e8 5%, #8d31e8 100%);
-  background-color: #4d23e8;
-  border-radius: 16px;
+  box-shadow: 1px 0px 3px 0px #0a0c80;
+  background-image: linear-gradient(to bottom, #4d23e8 5%, #8d31e8 100%);
+  background-color: #5c32cf2c;
+  border-radius: .7rem;
   display: inline-block;
   cursor: pointer;
   color: #eee;
