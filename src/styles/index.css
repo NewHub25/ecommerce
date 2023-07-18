@@ -13,9 +13,10 @@
   -webkit-text-size-adjust: 100%;
 
   color-scheme: light dark;
+  font-family: "Roboto", sans-serif;
 }
 
-body{
+body {
   min-height: 100vh;
   min-height: 100dvh;
 }
@@ -59,7 +60,7 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #0090de;
+    background-color: #eee;
   }
   a:hover {
     color: #747bff;
