@@ -14,10 +14,11 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
+  background-color: #eee;
   color-scheme: light dark;
   font-family: "Roboto", sans-serif;
 }
-*{
+* {
   box-sizing: border-box;
 }
 body {
@@ -29,10 +30,10 @@ img {
   height: 100px;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
-    color: #213547;
-    background-color: #eee;
+    color: #eee;
+    background-color: #333;
   }
   a:hover {
     color: #747bff;
