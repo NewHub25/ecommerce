@@ -14,7 +14,6 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  background-color: #eee;
   color-scheme: light dark;
   font-family: "Roboto", sans-serif;
 }
@@ -22,6 +21,7 @@
   box-sizing: border-box;
 }
 body {
+  background-color: #eee;
   min-height: 100vh;
   min-height: 100dvh;
 }
@@ -31,7 +31,7 @@ img {
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  body {
     color: #eee;
     background-color: #333;
   }

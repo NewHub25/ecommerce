@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    --s: 20%;
+    .mask-hide{
+      position: relative;
+      width: 500px;
+      height: 500px;
+      .mask-hide_img{
+        width: 100%;
+        height: 100%;
+        &:last-child {
+          position: absolute;
+          top: 0;
+          left: 0;
+          --mask: left 0% top 0%/var(--s) no-repeat linear-gradient(#000 0 0),
+            left 20% top 0%/var(--s) no-repeat linear-gradient(#000 0 0),
+            left 40% top 0%/var(--s) no-repeat linear-gradient(#000 0 0),
+            left 60% top 0%/var(--s) no-repeat linear-gradient(#000 0 0),
+            left 80% top 0%/var(--s) no-repeat linear-gradient(#000 0 0),
+            left 100% top 0%/var(--s) no-repeat linear-gradient(#000 0 0);
+          -webkit-mask: var(--mask);
+          mask: var(--mask);
+          transition: .3s linear;
+        }
+        &:hover{
+          --s: 0%;
+        }
+      }
+    }
+  }
+  
