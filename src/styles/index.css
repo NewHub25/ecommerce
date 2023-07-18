@@ -10,6 +10,7 @@
 @import "./banner.sass";
 @import "./store.sass";
 @import "./menu.sass";
+@import "./category.sass";
 
 :root {
   font-synthesis: none;
