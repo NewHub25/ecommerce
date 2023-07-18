@@ -2,6 +2,7 @@
 @import "./custom/button.css";
 @import "./custom/input.css";
 @import "./custom/icon_fashion.sass";
+@import "./custom/mask-hide.scss";
 @import "./home-search.sass";
 @import "./banner.sass";
 @import "./store.sass";
