@@ -138,11 +138,51 @@
         </section>
       </main>
       <footer class="store__footer">
-        <form action="">
-          <input type="text" />
-          <input type="email" />
-          <input type="reset" />
-          <input type="submit" />
+        <form class="form" name="formato" method="POST" action="#">
+          <h2 class="form__h2">
+            Hable con nosotros:
+            <!-- <code>mathterry25@gmail.com</code>: -->
+          </h2>
+          <input type="text" name="to_name" id="to_name" value="Terry" hidden />
+          <nav class="form__nav">
+            <input type="text"
+              required
+              name="from_name"
+              class="form__input"
+              id="from_name"
+              placeholder=" "
+              pattern="[a-zA-Z ]+"
+            />
+            <span class="form__span">Tu nombre</span>
+            <img class="form__img form__img_valid" src="check-solid.svg" alt="">
+            <img class="form__img form__img_invalid" src="xmark-solid.svg" alt="">
+          </nav>
+          <nav class="form__nav">
+            <input
+            required
+            name="email_id"
+            class="form__input"
+            id="email_id"
+            type="email"
+            placeholder=" "
+            pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+            />
+            <span class="form__span">Tu correo</span>
+            <img class="form__img form__img_valid" src="check-solid.svg" alt="">
+            <img class="form__img form__img_invalid" src="xmark-solid.svg" alt="">
+          </nav>
+          <nav class="form__nav">
+            <textarea
+              cols="10"
+              rows="5"
+              required
+              name="message"
+              id="message"
+              placeholder="Comentarios aquí 😎😉"
+              class="form__textarea"
+            ></textarea>
+          </nav>
+          <input type="submit" class="header__a" value="Enviar" />
         </form>
       </footer>
     </section>

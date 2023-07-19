@@ -11,6 +11,7 @@
 @import "./store.sass";
 @import "./menu.sass";
 @import "./category.sass";
+@import "./form.css";
 
 :root {
   font-synthesis: none;
@@ -21,6 +22,8 @@
 
   color-scheme: light dark;
   font-family: "Roboto", sans-serif;
+  --black: #333;
+  --white: #eee;
 }
 * {
   box-sizing: border-box;
