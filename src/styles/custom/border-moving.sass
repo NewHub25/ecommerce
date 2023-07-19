@@ -1,0 +1,63 @@
+// VARIABLES: a and b
+@property --a
+    syntax: "<angle>"
+    initial-value: 30deg
+    inherits: true
+:root
+    --a: 110deg
+// .border-moving
+@mixin border-moving($w)
+    width: $w
+    aspect-ratio: 1/1
+    border-radius: calc( $w / 8 )
+    background: crimson
+    position: relative
+    overflow: hidden
+    display: flex
+    justify-content: center
+    align-items: center
+    --g: 5deg
+    animation: d 1s infinite linear
+    &::before
+        position: absolute
+        content: ""
+        width: 150%
+        height: 150%
+        background: conic-gradient(gold var(--a), crimson 120deg, crimson 230deg, aqua 240deg)
+        animation: r 3s infinite linear
+        transition: --a 1.5s
+    &::after
+        position: absolute
+        content: ""
+        inset: calc( $w / 40 )
+        border-radius: calc( $w / 8 )
+        background: #333
+    &:hover
+        --g: 0deg
+        --a: 360deg
+    img
+        width: 90%
+        aspect-ratio: 1/1
+        position: absolute
+        border-radius: calc( $w / 9 )
+        z-index: 1
+@keyframes r
+    to
+        transform: rotate(1turn)
+@keyframes d
+    0%,100%
+        transform: perspective(450px) rotate3d( 1, 1,0, var(--g))
+    12.5%
+        transform: perspective(450px) rotate3d( 0, 1,0, var(--g))
+    25%
+        transform: perspective(450px) rotate3d(-1, 1,0, var(--g))
+    37.5%
+        transform: perspective(450px) rotate3d(-1, 0,0, var(--g))
+    50%
+        transform: perspective(450px) rotate3d(-1,-1,0, var(--g))
+    62.5%
+        transform: perspective(450px) rotate3d( 0,-1,0, var(--g))
+    75%
+        transform: perspective(450px) rotate3d( 1,-1,0, var(--g))
+    87.5%
+        transform: perspective(450px) rotate3d( 1, 0,0, var(--g))

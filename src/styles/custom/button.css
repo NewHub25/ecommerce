@@ -7,9 +7,10 @@
   cursor: pointer;
   color: #eee;
   font-family: Georgia;
-  font-size: 19px;
+  font-size: 1rem;
   padding: 11px 37px;
   text-decoration: none;
+  text-align: center;
 }
 .header__a:hover {
   background-image: linear-gradient(to bottom, #8d31e8 5%, #4d23e8 100%);

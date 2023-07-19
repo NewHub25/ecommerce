@@ -1,9 +1,39 @@
+@import "./custom/border-moving.sass"
+@import "./custom/shadow.scss"
+
 .category
     padding: 3rem
     .category__section
-        outline: 3px double #0f0
+        margin-bottom: 3rem
+        @include shadow(#3339)
         .category__header
+            padding: .5rem
             display: flex
             justify-content: space-between
+            border-bottom: 1px solid #747bff
+            font-size: 1.1rem
         .category__ul
             display: flex
+            justify-content: space-evenly
+            padding: 1rem 0.5rem
+            .category_product
+                @include shadow(#3333)
+                padding: 0.5rem
+                & > *
+                    display: block
+                    width: 100%
+                    margin-bottom: .5rem
+                    overflow-wrap: normal
+                    font-size: 1.1rem
+                div
+                    margin-left: auto
+                    margin-right: auto
+                p
+                    font-weight: 700
+                span
+                    text-align: center
+                    font-weight: 200
+                a
+                    font-size: 1rem
+                .border-moving
+                    @include border-moving(10rem)

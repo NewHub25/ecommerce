@@ -30,24 +30,18 @@ body {
   min-height: 100vh;
   min-height: 100dvh;
 }
-a{
+a {
   text-decoration: none;
   color: inherit;
+  color: #3b44fd;
 }
-img {
-  width: 100px;
-  height: 100px;
+a:hover {
+  color: #747bff;
 }
 
 @media (prefers-color-scheme: dark) {
   body {
     color: #eee;
     background-color: #333;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
   }
 }
