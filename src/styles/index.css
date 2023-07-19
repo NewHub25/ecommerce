@@ -26,7 +26,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #ddd;
+  background-color: #ffd900aa;
   min-height: 100vh;
   min-height: 100dvh;
 }
@@ -36,10 +36,14 @@ a {
   color: #3b44fd;
 }
 a:hover {
-  color: #747bff;
+  color: #1d28f8;
 }
 
 @media (prefers-color-scheme: dark) {
+  :root {
+    /* #ffd700 = GOLD*/
+    --background: #b2d2fa;
+  }
   body {
     color: #eee;
     background-color: #333;
