@@ -1,10 +1,11 @@
 .form {
+  margin: 0 auto;
   height: 20rem;
-  width: 100%;
+  width: 30%;
   --agua: aqua;
   --pared: #333;
 }
-.form > *{
+.form > * {
   margin-bottom: 1rem;
 }
 .form__nav {
@@ -21,14 +22,15 @@
   outline: none;
   position: relative;
   outline: none;
+  padding: .2rem;
 }
 .form__span {
   position: absolute;
-  top: 0.1rem;
+  top: 0.5rem;
   left: 0.5rem;
   /* padding: 5px; */
   pointer-events: none;
-  filter: opacity(.5);
+  filter: opacity(0.5);
   color: var(--white);
   text-transform: uppercase;
   transition: 0.5s;
@@ -43,7 +45,7 @@
   background: var(--pared);
   padding: 0 10px;
   font-size: 0.65em;
-  transform: translate(10px, -7px);
+  transform: translate(10px, -100%);
   border-right: 1px solid var(--agua);
   border-left: 1px solid var(--agua);
   filter: opacity(1);
@@ -51,7 +53,7 @@
 .form__img {
   width: 1rem;
   position: absolute;
-  right: 0;
+  right: .5rem;
   top: 0.2rem;
 }
 .form__img_valid {
