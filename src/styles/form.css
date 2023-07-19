@@ -1,8 +1,11 @@
 .form {
-  height: 15rem;
+  height: 20rem;
   width: 100%;
   --agua: aqua;
   --pared: #333;
+}
+.form > *{
+  margin-bottom: 1rem;
 }
 .form__nav {
   position: relative;
