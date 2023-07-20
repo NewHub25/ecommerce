@@ -1,28 +1,31 @@
 .form {
   margin: 0 auto;
-  height: 20rem;
-  width: 30%;
+  width: min(90%, 400px);
   --agua: aqua;
-  --pared: #333;
+  outline: 1px solid;
 }
 .form > * {
   margin-bottom: 1rem;
 }
+.form__h2 {
+  outline: 1px solid;
+  font-size: 1.2rem;
+  color: var(--white);
+}
 .form__nav {
   position: relative;
-  width: min(90%, 500px);
+  width: 100%;
 }
 .form__input {
   width: 100%;
   border: 1px solid #fff4;
   background: var(--black);
   border-radius: 7px;
-  color: var(--white);
   font-size: 1.1em;
   outline: none;
   position: relative;
   outline: none;
-  padding: 1rem .2rem;
+  padding: 1rem 0.5rem;
 }
 .form__span {
   position: absolute;
@@ -42,7 +45,7 @@
 .form__input:not(:placeholder-shown) + .form__span,
 .form__input:focus + .form__span {
   color: var(--agua);
-  background: var(--pared);
+  background-color: var(--black);
   padding: 0 10px;
   font-size: 0.65em;
   transform: translate(10px, -100%);
@@ -53,8 +56,9 @@
 .form__img {
   width: 1rem;
   position: absolute;
-  right: .5rem;
-  top: 0.2rem;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .form__img_valid {
   filter: invert(75%) sepia(100%) hue-rotate(60deg) saturate(200%);
@@ -78,9 +82,10 @@
   width: 100%;
   font-size: 1.1rem;
   border-radius: 10px;
-  background: var(--white);
-  color: var(--black);
+  color: var(--white);
+  background-color: var(--black);
   outline: none;
+  padding: 1rem;
 }
 [value="Enviar"] {
   width: min(50%, 200px);
