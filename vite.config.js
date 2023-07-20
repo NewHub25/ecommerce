@@ -7,8 +7,11 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        page1: resolve(__dirname, "pages/login.html"),
-        page2: resolve(__dirname, "pages/electro.html"),
+        login: resolve(__dirname, "pages/login.html"),
+        electro: resolve(__dirname, "pages/electro.html"),
+        jewelry: resolve(__dirname, "pages/jewelry.html"),
+        her: resolve(__dirname, "pages/her.html"),
+        him: resolve(__dirname, "pages/him.html"),
       },
     },
   },

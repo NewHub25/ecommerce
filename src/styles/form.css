@@ -24,6 +24,7 @@
   position: relative;
   outline: none;
   padding: 1rem 0.5rem;
+  caret-color: var(--agua);
 }
 .form__span {
   position: absolute;
