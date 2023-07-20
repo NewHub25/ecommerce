@@ -1,14 +1,11 @@
 .form {
-  margin: 0 auto;
   width: min(90%, 400px);
   --agua: aqua;
-  outline: 1px solid;
 }
 .form > * {
   margin-bottom: 1rem;
 }
 .form__h2 {
-  outline: 1px solid;
   font-size: 1.2rem;
   color: var(--white);
 }
