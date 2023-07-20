@@ -1,12 +1,29 @@
 .support
     width: 80%
+    font-style: italic
+    margin: 3rem 0
+    .nombre
+        font-weight: 400
     .support__header
-        outline: 1px solid
+        width: 80%
+        margin: 0 auto
+        font-size: 1.5rem
+        font-weight: 100
+        line-height: 2rem
     .support__div
+        margin: 3rem auto
         width: 100%
         .support__h2
             font-size: 2rem
+            margin-bottom: 1rem
+            position: relative
+            &:hover
+                &::before
+                    content: "✅"
+                    position: absolute
+                    left: -2.5rem
         .support__p
-            color: #eee
+            line-height: 2rem
     .support__footer
-        outline: 1px solid
+        width: 90%
+        margin: 0 auto

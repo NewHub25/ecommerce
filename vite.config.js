@@ -14,6 +14,7 @@ export default defineConfig({
         him: resolve(__dirname, "pages/him.html"),
         brands: resolve(__dirname, "pages/brands.html"),
         offers: resolve(__dirname, "pages/offers.html"),
+        support: resolve(__dirname, "pages/support.html"),
       },
     },
   },
