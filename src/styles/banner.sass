@@ -1,3 +1,5 @@
+@import "./custom/shadow.scss"
+
 .banner
     height: 30vh
     .banner__img
@@ -5,3 +7,16 @@
         height: 100%
         object-fit: cover
         object-position: center 30%
+    .banner__div
+        position: absolute
+        left: 25vw
+        bottom: 5%
+        .banner__p
+            color: var(--black)
+            width: 40vw
+            font-size: 1.5rem
+            font-weight: 700
+            @include shadowText(#fff)
+            line-height: 2rem
+            margin: 0.5rem 0
+            font-style: italic

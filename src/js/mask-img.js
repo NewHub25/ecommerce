@@ -3,10 +3,13 @@ const time = 500;
 
 export function maskImg() {
   const banner = document.querySelector(".mask-container");
-  banner.lastElementChild.classList.add("mask");
+  const imgs_of_banner = banner.querySelectorAll("img");
+  const lastImg = imgs_of_banner[imgs_of_banner.length - 1];
+  lastImg.classList.add("mask");
   setTimeout(() => {
-    const temp = banner.removeChild(banner.lastElementChild);
-    banner.insertBefore(temp, banner.firstElementChild);
-    temp.classList.remove("mask");
+    banner.removeChild(lastImg);
+    banner.insertBefore(lastImg, banner.firstElementChild);
+    lastImg.classList.remove("mask");
+    // La variable lastImg desaparece y sigue el ciclo
   }, time);
 }

@@ -1,3 +1,6 @@
 @mixin shadow($c) {
   box-shadow: 1px 1px 5px 1px $c;
 }
+@mixin shadowText($c) {
+  text-shadow: 1px 1px 5px $c;
+}
