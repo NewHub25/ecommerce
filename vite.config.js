@@ -12,6 +12,8 @@ export default defineConfig({
         jewelry: resolve(__dirname, "pages/jewelry.html"),
         her: resolve(__dirname, "pages/her.html"),
         him: resolve(__dirname, "pages/him.html"),
+        brands: resolve(__dirname, "pages/brands.html"),
+        offers: resolve(__dirname, "pages/offers.html"),
       },
     },
   },
