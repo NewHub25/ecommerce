@@ -13,6 +13,7 @@
 @import "./category.sass";
 @import "./footer.sass";
 @import "./form.css";
+@import "./support.sass";
 
 :root {
   /* font-synthesis: none;

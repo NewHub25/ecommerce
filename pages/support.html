@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./../public/tie_small.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soporte</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script defer type="module" src="login.js"></script>
+  </head>
+  <body>
+    <h1>support</h1>
+    <header class="home-search">
+      <nav class="home-search__nav">
+        <span class="icon_fashion">
+          <span class="icon_fashion_img"></span>Tienda <span class="icon_fashion_first-word">Preciazo</span>
+        </span>
+        <input class="home-search__input css-input" type="search" name="button-search" id="btn-search" placeholder="¿Buscas algo?">
+        <a href="./../index.html" class="header__a title">Inicio</a>
+      </nav>
+    </header>
+    <main class="login store">
+      <article class="store__article">
+        <section class="support">
+            <header class="support__header">Bienvenidos a Preciazo, tu tienda en línea de confianza donde encontrarás una amplia selección de electrodomésticos, ropa de moda y exquisitas joyas. Nuestro compromiso es ofrecerte productos de alta calidad y un servicio excepcional para que tu experiencia de compra sea inolvidable. A continuación, te proporcionamos información clave sobre nuestra empresa y políticas para asegurarnos de que tengas toda la confianza en tu decisión de comprar con nosotros.</header>
+            <div class="support__div">
+                <h2 class="support__h2" id="who-are">Quiénes Somos</h2>
+                <p class="support__p">En Preciazo, somos un equipo apasionado de profesionales que tiene como objetivo brindar a nuestros clientes una experiencia de compra excepcional. Nuestra empresa se fundó con el propósito de ofrecer una amplia gama de productos, desde electrodomésticos que simplifican tu vida diaria hasta prendas de ropa que realzan tu estilo, y hermosas joyas que expresan tu individualidad. Nos enorgullecemos de ofrecer artículos de marcas reconocidas y diseños exclusivos que satisfacen las necesidades y gustos más exigentes.</p>
+            </div>
+            <div class="support__div">
+                <h2 class="support__h2" id="privacy-policy">Políticas de Privacidad</h2>
+                <p class="support__p">En Preciazo, valoramos y respetamos tu privacidad. Nuestra política de privacidad garantiza que toda la información que nos proporcionas se maneje de manera segura y confidencial. No compartiremos tus datos personales con terceros sin tu consentimiento expreso. Utilizamos tecnologías de seguridad avanzadas para proteger tus datos mientras navegas y realizas compras en nuestra página web. Puedes revisar nuestra política completa de privacidad en la sección correspondiente para obtener más detalles.</p>
+            </div>
+            <div class="support__div">
+                <h2 class="support__h2" id="faq">Preguntas Frecuentes</h2>
+                <p class="support__p">Para facilitar tu experiencia de compra, hemos recopilado una lista de preguntas frecuentes que abordan las consultas más comunes que nuestros clientes pueden tener. Estas preguntas incluyen información sobre métodos de pago, tiempos de entrega, garantías de productos, y más. Nuestro objetivo es proporcionarte respuestas claras y detalladas para que puedas tomar decisiones informadas antes de realizar tu compra. Si tienes alguna pregunta adicional, no dudes en ponerte en contacto con nuestro equipo de atención al cliente, quienes estarán encantados de ayudarte.</p>
+            </div>
+            <div class="support__div">
+                <h2 class="support__h2" id="shipping-returns">Envíos y Devoluciones</h2>
+                <p class="support__p">En Preciazo, nos esforzamos por garantizar que tus productos lleguen a tiempo y en perfectas condiciones. Trabajamos con socios logísticos confiables que aseguran entregas rápidas y seguras. Si por alguna razón no estás satisfecho con tu compra, ofrecemos una política de devolución sin complicaciones. Puedes devolver los productos en su estado original dentro de un plazo determinado para obtener un reembolso o cambio. Te animamos a leer nuestras políticas completas de envíos y devoluciones para obtener más información.</p>
+            </div>
+            <div class="support__div">
+                <h2 class="support__h2" id="support">Soporte</h2>
+                <p class="support__p">Nuestro equipo de soporte está aquí para ayudarte en cada paso del camino. Si necesitas asistencia con cualquier aspecto de tu experiencia de compra, no dudes en comunicarte con nosotros. Puedes ponerte en contacto a través de correo electrónico, teléfono o chat en línea. Nuestros representantes capacitados te brindarán soluciones rápidas y eficientes para cualquier consulta o problema que puedas tener.</p>
+            </div>
+            <footer class="support__footer">En Preciazo, nos esforzamos por brindarte la mejor experiencia de compra en línea. Esperamos que esta información haya sido útil y te invitamos a explorar nuestro catálogo de productos excepcionales. ¡Gracias por elegirnos como tu tienda de confianza para electrodomésticos, ropa y joyas de calidad!</footer>
+        </section>
+      </article>
+      <footer class="store__footer footer">
+        <section class="footer__img">
+          <span class="icon_fashion">
+            <span class="icon_fashion_img"></span>Tienda <span class="icon_fashion_first-word">Preciazo</span>
+          </span>  
+        </section>
+        <form class="form" name="formato" method="POST" action="#">
+          <h2 class="form__h2">
+            Hable con nosotros
+            <!-- <code>mathterry25@gmail.com</code>: -->
+          </h2>
+          <input type="text" name="to_name" id="to_name" value="Terry" hidden />
+          <nav class="form__nav">
+            <input type="text"
+              required
+              name="from_name"
+              class="form__input"
+              id="from_name"
+              placeholder=" "
+              pattern="[a-zA-Z ]+"
+            />
+            <span class="form__span">Tu nombre</span>
+            <img loading="lazy" class="form__img form__img_valid" src="./../public/check-solid.svg" alt="">
+            <img loading="lazy" class="form__img form__img_invalid" src="./../public/xmark-solid.svg" alt="">
+          </nav>
+          <nav class="form__nav">
+            <input
+            required
+            name="email_id"
+            class="form__input"
+            id="email_id"
+            type="email"
+            placeholder=" "
+            pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+            />
+            <span class="form__span">Tu correo</span>
+            <img loading="lazy" class="form__img form__img_valid" src="./../public/check-solid.svg" alt="">
+            <img loading="lazy" class="form__img form__img_invalid" src="./../public/xmark-solid.svg" alt="">
+          </nav>
+          <nav class="form__nav">
+            <textarea
+              cols="10"
+              rows="3"
+              required
+              name="message"
+              id="message"
+              placeholder="Comentarios aquí ✅✅✅"
+              class="form__textarea"
+            ></textarea>
+          </nav>
+          <input type="submit" class="header__a" value="Enviar" />
+        </form>
+        <footer class="footer__footer">Desarrollado por Terry I. &copy; | Comunidad ONE</footer>
+      </footer>
+    </main>
+  </body>
+</html>
