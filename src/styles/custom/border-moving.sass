@@ -19,28 +19,28 @@
     --g: 5deg
     animation: d 1s infinite linear
     &::before
-        position: absolute
         content: ""
+        position: absolute
         width: 150%
         height: 150%
         background: conic-gradient(crimson var(--a), gold 120deg, gold 230deg, aqua 240deg)
         animation: r 3s infinite linear
         transition: --a 1.5s
     &::after
-        position: absolute
         content: ""
-        inset: calc( $w / 40 )
+        position: absolute
+        inset: calc( $w / 50 )
         border-radius: calc( $w / 8 )
         background: #333
     &:hover
         --g: 0deg
         --a: 360deg
     img
+        position: absolute
+        z-index: 1
         width: 90%
         aspect-ratio: 1/1
-        position: absolute
         border-radius: calc( $w / 9 )
-        z-index: 1
 @keyframes r
     to
         transform: rotate(1turn)
