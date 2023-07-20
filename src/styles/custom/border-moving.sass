@@ -18,6 +18,8 @@
     align-items: center
     --g: 5deg
     animation: d 1s infinite linear
+    &.none3d
+        animation: none
     &::before
         content: ""
         position: absolute
@@ -35,7 +37,10 @@
     &:hover
         --g: 0deg
         --a: 360deg
-    img
+    &:has(*:focus)
+        --g: 0deg
+        --a: 360deg
+    img, .container-move
         position: absolute
         z-index: 1
         width: 90%

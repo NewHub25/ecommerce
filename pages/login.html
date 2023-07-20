@@ -2,141 +2,53 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="user-tie-solid.svg" />
+    <link rel="icon" type="image/svg+xml" href="./../public/tie_small.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Moda</title>
+    <title>Inicio de sesi&oacute;n</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script defer type="module" src="./login.js"></script>
+    <script defer type="module" src="login.js"></script>
   </head>
   <body>
+    <h1>login</h1>
     <header class="home-search">
       <nav class="home-search__nav">
         <span class="icon_fashion">
-          <span class="icon_fashion_img"></span>Tienda <span class="icon_fashion_first-word"><h1>Moda</h1></span>
+          <span class="icon_fashion_img"></span>Tienda <span class="icon_fashion_first-word">Moda</span>
         </span>
-        <input class="home-search__input css-input" type="search" name="button-search" id="btn-search">
+        <input class="home-search__input css-input" type="search" name="button-search" id="btn-search" placeholder="¿Buscas algo?">
       </nav>
     </header>
-    <section class="store">
-      <aside class="menu store__aside">
-        <article class="menu__article">
-          <div class="menu__div">
-            <a class="car" href="#"></a>
-            <span class="menu__span">0 items</span>
-          </div>
-          <ul class="menu__ul">
-            <li><a href="#" class="btn2 title">Inicio</a></li>
-            <li><a href="#" class="btn2 title">Productos</a></li>
-            <li><a href="#" class="btn2 title">Marcas</a></li>
-            <li><a href="#" class="btn2 title">Cont&aacute;ctenos</a></li>
-          </ul>
-        </article>
-      </aside>
-      <main class="store__main category">
-        <section class="category__section">
-          <header class="category__header">
-            <h2>categoria 1</h2>
-            <a href="#">ver todos</a>
-          </header>
-          <ul class="category__ul">
-            <li class="category_product">
-              <div class="border-moving"><img loading="lazy" src="img/melvin-buezo-shoes.jpg" alt="Product 1"></div>
-              <p>nombre producto 1</p>
-              <span>precio $123</span><a href="#">ver producto &rarr;</a></li>
-            <li class="category_product">
-              <div class="border-moving"><img loading="lazy" src="img/melvin-buezo-shoes.jpg" alt="Product 2"></div>
-              <p>nombre producto 2</p>
-              <span>precio $123</span><a href="#">ver producto &rarr;</a></li>
-            <li class="category_product">
-              <div class="border-moving"><img loading="lazy" src="img/melvin-buezo-shoes.jpg" alt="Product 3"></div>
-              <p>nombre producto 3</p>
-              <span>precio $123</span><a href="#">ver producto &rarr;</a></li>
-            <li class="category_product">
-              <div class="border-moving"><img loading="lazy" src="img/melvin-buezo-shoes.jpg" alt="Product 4"></div>
-              <p>nombre producto 4</p>
-              <span>precio $123</span><a href="#">ver producto &rarr;</a></li>
+    <main class="login store">
+      <article class="store__article">
+        <form class="session none3d" action="/procesar_inicio_sesion" method="post">
+          <nav class="container-move">
+            <label>Usuario<br><input class="css-input" type="text" id="usuario" name="usuario" required></label>
+            <label>Contraseña<br><input class="css-input" type="password" id="contrasena" name="contrasena" required></label>
+            <input class="header__a title" type="submit" value="Iniciar Sesión">
+          </nav>
+        </form>
+      </article>
+      <footer class="store__footer footer">
+        <section class="footer__img">
+          <span class="icon_fashion">
+            <span class="icon_fashion_img"></span>Tienda <span class="icon_fashion_first-word">Moda</span>
+          </span>  
+        </section>
+        <section class="footer_details">
+          <ul>
+            <li><a href="#" class="footer__a">Quiénes Somos</a></li>
+            <li><a href="#" class="footer__a">Políticas de Privacidad</a></li>
+            <li><a href="#" class="footer__a">Preguntas Frecuentes</a></li>
+            <li><a href="#" class="footer__a">Envíos y Devoluciones</a></li>
+            <li><a href="#" class="footer__a">Soporte</a></li>
           </ul>
         </section>
-        <section class="category__section">
-          <header class="category__header">
-            <h2>categoria 2</h2>
-            <a href="#">ver todos</a>
-          </header>
-          <ul class="category__ul">
-            <li class="category_product">
-              <div class="border-moving"><img loading="lazy" src="img/melvin-buezo-shoes.jpg" alt="Product 1"></div>
-              <p>nombre producto 1</p>
-              <span>precio $123</span><a href="#">ver producto &rarr;</a></li>
-            <li class="category_product">
-              <div class="border-moving"><img loading="lazy" src="img/melvin-buezo-shoes.jpg" alt="Product 2"></div>
-              <p>nombre producto 2</p>
-              <span>precio $123</span><a href="#">ver producto &rarr;</a></li>
-            <li class="category_product">
-              <div class="border-moving"><img loading="lazy" src="img/melvin-buezo-shoes.jpg" alt="Product 3"></div>
-              <p>nombre producto 3</p>
-              <span>precio $123</span><a href="#">ver producto &rarr;</a></li>
-            <li class="category_product">
-              <div class="border-moving"><img loading="lazy" src="img/melvin-buezo-shoes.jpg" alt="Product 4"></div>
-              <p>nombre producto 4</p>
-              <span>precio $123</span><a href="#">ver producto &rarr;</a></li>
-          </ul>
-        </section>
-        <section class="category__section">
-          <header class="category__header">
-            <h2>categoria 3</h2>
-            <a href="#">ver todos</a>
-          </header>
-          <ul class="category__ul">
-            <li class="category_product">
-              <div class="border-moving"><img loading="lazy" src="img/melvin-buezo-shoes.jpg" alt="Product 1"></div>
-              <p>nombre producto 1</p>
-              <span>precio $123</span><a href="#">ver producto &rarr;</a></li>
-            <li class="category_product">
-              <div class="border-moving"><img loading="lazy" src="img/melvin-buezo-shoes.jpg" alt="Product 2"></div>
-              <p>nombre producto 2</p>
-              <span>precio $123</span><a href="#">ver producto &rarr;</a></li>
-            <li class="category_product">
-              <div class="border-moving"><img loading="lazy" src="img/melvin-buezo-shoes.jpg" alt="Product 3"></div>
-              <p>nombre producto 3</p>
-              <span>precio $123</span><a href="#">ver producto &rarr;</a></li>
-            <li class="category_product">
-              <div class="border-moving"><img loading="lazy" src="img/melvin-buezo-shoes.jpg" alt="Product 4"></div>
-              <p>nombre producto 4</p>
-              <span>precio $123</span><a href="#">ver producto &rarr;</a></li>
-          </ul>
-        </section>
-        <section class="category__section">
-          <header class="category__header">
-            <h2>categoria 4</h2>
-            <a href="#">ver todos</a>
-          </header>
-          <ul class="category__ul">
-            <li class="category_product">
-              <div class="border-moving"><img loading="lazy" src="img/melvin-buezo-shoes.jpg" alt="Product 1"></div>
-              <p>nombre producto 1</p>
-              <span>precio $123</span><a href="#">ver producto &rarr;</a></li>
-            <li class="category_product">
-              <div class="border-moving"><img loading="lazy" src="img/melvin-buezo-shoes.jpg" alt="Product 2"></div>
-              <p>nombre producto 2</p>
-              <span>precio $123</span><a href="#">ver producto &rarr;</a></li>
-            <li class="category_product">
-              <div class="border-moving"><img loading="lazy" src="img/melvin-buezo-shoes.jpg" alt="Product 3"></div>
-              <p>nombre producto 3</p>
-              <span>precio $123</span><a href="#">ver producto &rarr;</a></li>
-            <li class="category_product">
-              <div class="border-moving"><img loading="lazy" src="img/melvin-buezo-shoes.jpg" alt="Product 4"></div>
-              <p>nombre producto 4</p>
-              <span>precio $123</span><a href="#">ver producto &rarr;</a></li>
-          </ul>
-        </section>
-      </main>
-      <footer class="store__footer">
         <form class="form" name="formato" method="POST" action="#">
           <h2 class="form__h2">
-            Hable con nosotros:
+            Hable con nosotros
             <!-- <code>mathterry25@gmail.com</code>: -->
           </h2>
           <input type="text" name="to_name" id="to_name" value="Terry" hidden />
@@ -150,8 +62,8 @@
               pattern="[a-zA-Z ]+"
             />
             <span class="form__span">Tu nombre</span>
-            <img loading="lazy" class="form__img form__img_valid" src="check-solid.svg" alt="">
-            <img loading="lazy" class="form__img form__img_invalid" src="xmark-solid.svg" alt="">
+            <img loading="lazy" class="form__img form__img_valid" src="./../public/check-solid.svg" alt="">
+            <img loading="lazy" class="form__img form__img_invalid" src="./../public/xmark-solid.svg" alt="">
           </nav>
           <nav class="form__nav">
             <input
@@ -164,23 +76,23 @@
             pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
             />
             <span class="form__span">Tu correo</span>
-            <img loading="lazy" class="form__img form__img_valid" src="check-solid.svg" alt="">
-            <img loading="lazy" class="form__img form__img_invalid" src="xmark-solid.svg" alt="">
+            <img loading="lazy" class="form__img form__img_valid" src="./../public/check-solid.svg" alt="">
+            <img loading="lazy" class="form__img form__img_invalid" src="./../public/xmark-solid.svg" alt="">
           </nav>
           <nav class="form__nav">
             <textarea
               cols="10"
-              rows="5"
+              rows="3"
               required
               name="message"
               id="message"
-              placeholder="Comentarios aquí 😎😉"
+              placeholder="Comentarios aquí ✅✅✅"
               class="form__textarea"
             ></textarea>
           </nav>
           <input type="submit" class="header__a" value="Enviar" />
         </form>
       </footer>
-    </section>
+    </main>
   </body>
 </html>
