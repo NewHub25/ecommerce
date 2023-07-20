@@ -8,6 +8,7 @@
 .form__h2 {
   font-size: 1.2rem;
   color: var(--white);
+  opacity: 0.8;
 }
 .form__nav {
   position: relative;
