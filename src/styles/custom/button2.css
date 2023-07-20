@@ -1,7 +1,7 @@
 .btn2 {
   box-shadow: 1px 1px 3px 0px #0a0c80;
   background-color: #5c32cf2c;
-  border-radius: 0.7rem;
+  border-radius: 0.5rem;
   display: inline-block;
   cursor: pointer;
   color: #222;
@@ -10,7 +10,7 @@
   padding: 11px 37px;
   text-decoration: none;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
   width: 100%;
 }
 .btn2:hover {
