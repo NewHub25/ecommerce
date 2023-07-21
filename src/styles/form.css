@@ -86,15 +86,15 @@
   outline: none;
   padding: 1rem;
 }
-[value="Enviar"] {
-  width: min(50%, 200px);
-  font-size: 1.2em;
-  color: var(--white);
-  font-weight: 700;
-  border-radius: 7px;
+[type="submit"],
+[type="reset"] {
+  width: min(40%, 200px);
+  /* color: var(--white); */
+  /* font-weight: 700; */
+  /* border-radius: 7px; */
   border: none;
-  background-color: var(--bg-100);
-  transition: transform 0.5s;
+  /* background-color: var(--bg-100); */
+  /* transition: transform 0.5s; */
   letter-spacing: 0.2em;
   cursor: pointer;
 }
