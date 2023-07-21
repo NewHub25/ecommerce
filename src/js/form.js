@@ -2,10 +2,18 @@ emailjs.init("12ohxHgCGHSKdVDaH");
 const serviceID = "default_service";
 const templateID = "template_8th903l";
 
-const btnSend = document.querySelector('[type="submit"]');
+/**
+ * Es necesario estos selectores
+ * .form
+ * .form_nav input
+ * .form [type="submit"]
+ * Y que sea la UNICA clase FORM
+ * CHANGE next time, the IDs of document.html
+ */
+const btnSend = document.querySelector('.form [type="submit"]');
 
 export function sendEmail() {
-  document.querySelector("form").addEventListener("submit", function (event) {
+  document.querySelector(".form").addEventListener("submit", function (event) {
     event.preventDefault();
     btnSend.value = "Enviando...";
 
@@ -33,7 +41,7 @@ export function sendEmail() {
         alert("Enviado!");
         document
           .querySelectorAll(".form_nav input")
-          .forEach((l) => (l.value = ""));
+          .forEach((each) => (each.value = ""));
         document.querySelector("textarea").textContent = "";
       },
       (err) => {
