@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script defer type="module" src="./categories.js"></script>
+    <script defer type="module" src="categories.js"></script>
   </head>
   <body>
     <h1>her</h1>
@@ -113,8 +113,8 @@
               pattern="[a-zA-Z ]+"
             />
             <span class="form__span">Tu nombre</span>
-            <img loading="lazy" class="form__img form__img_valid" src="check-solid.svg" alt="">
-            <img loading="lazy" class="form__img form__img_invalid" src="xmark-solid.svg" alt="">
+            <img loading="lazy" class="form__img form__img_valid" src="./../public/check-solid.svg" alt="">
+            <img loading="lazy" class="form__img form__img_invalid" src="./../public/xmark-solid.svg" alt="">
           </nav>
           <nav class="form__nav">
             <input
@@ -127,19 +127,11 @@
             pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
             />
             <span class="form__span">Tu correo</span>
-            <img loading="lazy" class="form__img form__img_valid" src="check-solid.svg" alt="">
-            <img loading="lazy" class="form__img form__img_invalid" src="xmark-solid.svg" alt="">
+            <img loading="lazy" class="form__img form__img_valid" src="./../public/check-solid.svg" alt="">
+            <img loading="lazy" class="form__img form__img_invalid" src="./../public/xmark-solid.svg" alt="">
           </nav>
           <nav class="form__nav">
-            <textarea
-              cols="10"
-              rows="3"
-              required
-              name="message"
-              id="message"
-              placeholder="Comentarios aquí ✅✅✅"
-              class="form__textarea"
-            ></textarea>
+            <textarea cols="10" rows="3" required name="message" id="message" placeholder="Comentarios aquí ✅✅✅" class="form__textarea"></textarea>
           </nav>
           <input type="submit" class="header__a" value="Enviar" />
           <input type="reset" class="header__a" value="Borrar" />
