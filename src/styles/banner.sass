@@ -7,6 +7,11 @@
         height: 100%
         object-fit: cover
         object-position: center var(--position-img)
+        animation-name: moveImgBanner
+        animation-duration: 5s
+        animation-iteration-count: infinite
+        animation-timing-function: ease-in
+        animation-direction: alternate
     .banner__div
         position: absolute
         left: 25vw
@@ -20,3 +25,7 @@
             line-height: 2rem
             margin: 0.5rem 0
             font-style: italic
+
+@keyframes moveImgBanner
+    to
+        object-position: center calc( 10% + var(--position-img) )

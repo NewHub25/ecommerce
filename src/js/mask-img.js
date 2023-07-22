@@ -1,4 +1,4 @@
-const time = 500;
+const time = 5000;
 //Se añade la clase "mask" a todas las imágenes
 
 export function maskImg() {
