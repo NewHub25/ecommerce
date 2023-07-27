@@ -1,7 +1,7 @@
 @import "./../src/styles/custom/border-moving.sass"
 
 .session
-    width: min(80%, 400px)
+    width: min(80%, 500px)
     outline: 1px solid #f0f
     @include border-moving(min(80%, 400px))
     nav
@@ -9,12 +9,19 @@
         flex-flow: column nowrap
         justify-content: space-evenly
         align-items: center
+        padding: 2rem
+        gap: 1rem
         label
             color: #eee
             width: 100%
             text-align: center
-            line-height: 2rem
             font-size: 1.2rem
+            .message-error
+                color: red
+                font-size: .8em
+                line-height: 1rem
         input
-            width: 80%
+            width: 100%
             font-size: 1.2rem
+        a
+            align-self: flex-end

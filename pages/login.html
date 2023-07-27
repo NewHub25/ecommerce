@@ -12,6 +12,10 @@
     <script defer type="module" src="login.js"></script>
   </head>
   <body>
+    <dialog>
+      <button onclick="this.parentElement.close()">X</button>
+      <h2>MENSAJE</h2>
+    </dialog>
     <h1>login</h1>
     <header class="home-search">
       <nav class="home-search__nav">
@@ -24,11 +28,19 @@
     </header>
     <main class="login store">
       <article class="store__article">
-        <form class="session none3d" action="/procesar_inicio_sesion" method="post">
+        <form class="session none3d">
           <nav class="container-move">
-            <label>Usuario<br><input class="css-input" type="text" id="usuario" name="usuario" required></label>
-            <label>Contraseña<br><input class="css-input" type="password" id="contrasena" name="contrasena" required></label>
-            <input class="header__a title" type="submit" value="Iniciar Sesión">
+            <label>Usuario<br>
+              <input class="css-input" type="text" name="user" required><br>
+              <span class="message-error"></span>
+            </label>
+            <label>Contraseña<br>
+              <input class="css-input" type="password" name="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"><br>
+              <span class="message-error"></span>
+            </label>
+            <a href="#" class="btn2">¿No tienes cuenta?</a>
+            <input class="header__a" type="submit" value="Iniciar Sesión">
+            <input class="btn2" type="reset" name="reset" value="Limpiar">
           </nav>
         </form>
       </article>

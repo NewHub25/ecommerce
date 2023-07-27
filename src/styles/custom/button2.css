@@ -11,7 +11,6 @@
   text-decoration: none;
   font-weight: 400;
   text-align: center;
-  width: 100%;
 }
 .btn2:hover {
   background-image: linear-gradient(to bottom, #8d31e8 5%, #4d23e8 100%);
