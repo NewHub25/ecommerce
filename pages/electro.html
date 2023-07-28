@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./../public/icon/game.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Electr&oacute;nicos</title>
+    <title>Electrónicos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script defer type="module" src="./categories.js"></script>
+    <style>
+      body{
+        --background: rgb(252, 173, 71);
+      }
+    </style>
   </head>
   <body>
     <h1>electro</h1>
@@ -19,13 +24,18 @@
           <span class="icon_fashion_img"></span>Tienda <span class="icon_fashion_first-word">Preciazo</span>
         </span>
         <input class="home-search__input css-input" type="search" name="button-search" id="btn-search" placeholder="¿Buscas algo?">
+        <div class="userIn_show">
+          <span class="css-input">user</span>
+          <input class="header__a title" value="Cerrar sesión" onclick="localStorage.clear(); location.reload()">
+        </div>
+        <a href="login.html" class="userIn_hide header__a title">Soy cliente</a>
       </nav>
     </header>
     <section class="store">
       <aside class="menu store__aside">
         <article class="menu__article">
           <div class="menu__div">
-            <a class="car" href="#"></a>
+            <a class="car" href="car.html"></a>
             <span class="menu__span">0 items</span>
           </div>
           <ul class="menu__ul">

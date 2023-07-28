@@ -7,15 +7,14 @@ export function validAllInputsOf(form) {
 }
 
 export function valida(input) {
+  if (input.type === "submit" || input.type === "reset") return;
   if (validadores[input.type]) {
     validadores[input.type](input);
   }
 
   if (input.validity.valid) {
-    input.parentElement.classList.remove("input-container--invalid");
     input.parentElement.querySelector(".message-error").innerHTML = "";
   } else {
-    input.parentElement.classList.add("input-container--invalid");
     input.parentElement.querySelector(".message-error").innerHTML =
       log_return_Message(input);
   }
@@ -31,6 +30,7 @@ const tipoDeErrores = [
 const mensajesDeError = {
   text: {
     valueMissing: "El campo nombre no puede estar vacío",
+    patternMismatch: "Al menos escribe 2 nombres",
   },
   email: {
     valueMissing: "El campo correo no puede estar vacío",
@@ -72,7 +72,8 @@ function log_return_Message(input) {
   let mensaje = "";
   tipoDeErrores.forEach((error) => {
     if (input.validity[error]) {
-      mensaje = mensajesDeError[input.type][error];
+      // Si tiene un mensaje en línea, se despliega a traves de dataset
+      mensaje = input.dataset.msg || mensajesDeError[input.type][error];
       console.error(input.type + ": " + mensaje);
     }
   });

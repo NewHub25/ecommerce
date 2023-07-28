@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./../public/icon/buttons.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Para &eacute;l</title>
+    <title>Ofertas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
@@ -12,20 +12,25 @@
     <script defer type="module" src="categories.js"></script>
   </head>
   <body>
-    <h1>him</h1>
+    <h1>offers</h1>
     <header class="home-search">
       <nav class="home-search__nav">
         <span class="icon_fashion">
           <span class="icon_fashion_img"></span>Tienda <span class="icon_fashion_first-word">Preciazo</span>
         </span>
         <input class="home-search__input css-input" type="search" name="button-search" id="btn-search" placeholder="¿Buscas algo?">
+        <div class="userIn_show">
+          <span class="css-input">user</span>
+          <input class="header__a title" value="Cerrar sesión" onclick="localStorage.clear(); location.reload()">
+        </div>
+        <a href="login.html" class="userIn_hide header__a title">Soy cliente</a>
       </nav>
     </header>
     <section class="store">
       <aside class="menu store__aside">
         <article class="menu__article">
           <div class="menu__div">
-            <a class="car" href="#"></a>
+            <a class="car" href="car.html"></a>
             <span class="menu__span">0 items</span>
           </div>
           <ul class="menu__ul">
@@ -44,7 +49,7 @@
       <main class="store__main category">
         <section class="category__section">
           <header class="category__header">
-            <h2>Para &eacute;l</h2>
+            <h2>Ofertas</h2>
           </header>
           <ul class="category__ul">
             <li class="category_product">

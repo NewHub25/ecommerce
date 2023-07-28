@@ -1,9 +1,18 @@
 import "./../src/styles/index.css";
 import "./login.sass";
 import { sendEmail } from "../src/js/form.js";
-import { beforeSendForm } from "../src/js/register.js";
+import { beforeSend_signIn, beforeSend_register } from "../src/js/signIn.js";
 
-window.addEventListener("load", () => {
-  beforeSendForm(document.querySelector?.(".session"));
-  sendEmail();
-});
+if (document.title === "Registro") {
+  // REGISTER page
+  window.addEventListener("load", () => {
+    beforeSend_register(document.querySelector(".register"));
+    sendEmail();
+  });
+} else {
+  //LOGIN page
+  window.addEventListener("load", () => {
+    beforeSend_signIn(document.querySelector(".session"));
+    sendEmail();
+  });
+}

@@ -7,6 +7,18 @@
         justify-content: center
         align-items: center
         gap: 1rem
+        .car
+            position: relative
+        .car:hover::after
+            content: "Mira tu carrito"
+            position: absolute
+            font-weight: 700
+            bottom: -80%
+            width: 120px
+            text-align: center
+            background-color: #fff
+            padding: 0.5rem
+            border-radius: 1rem
         .menu__span
             font-size: 1.2rem
     .menu__ul

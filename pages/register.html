@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./../public/icon/tie-violet.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio de sesión</title>
+    <title>Registro</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
       <button onclick="this.parentElement.close()">X</button>
       <h2>MENSAJE</h2>
     </dialog>
-    <h1>login</h1>
+    <h1>register</h1>
     <header class="home-search">
       <nav class="home-search__nav">
         <span class="icon_fashion">
@@ -28,20 +28,26 @@
     </header>
     <main class="login store">
       <article class="store__article">
-        <form class="session none3d">
-          <nav class="container-move">
-            <label>Usuario<br>
-              <input class="css-input" type="text" name="name" required><br>
-              <span class="message-error"></span>
+        <form class="register">
+            <label>Nombre de usuario: <input class="css-input" type="text" data-msg="Al menos 6 carácteres debe tener. Puede contener números. No debe tener espacios." name="name" required pattern="[a-zA-Z0-9]{6,}"><br>
+                <span class="message-error"></span>
             </label>
-            <label>Contraseña<br>
-              <input class="css-input" type="password" name="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"><br>
-              <span class="message-error"></span>
+            <label>Contraseña: <input class="css-input" type="password" name="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"><br>
+                <span class="message-error"></span>
             </label>
-            <a href="./register.html" class="btn2">¿No tienes cuenta?</a>
-            <input class="header__a" type="submit" value="Iniciar Sesión">
-            <input class="btn2" type="reset" name="reset" value="Limpiar">
-          </nav>
+            <span class="form_person">Datos personales:</span>
+            <label>Nombres: <input class="css-input" type="text" name="namePerson" required pattern="([a-zA-ZñÑ]+ )+[a-zA-ZñÑ]+"><br>
+                <span class="message-error"></span>
+            </label>
+            <label>Fecha de nacimiento: <input class="css-input" type="date" name="date" required><br>
+                <span class="message-error"></span>
+            </label>
+            <label>Correo: <input class="css-input" type="email" name="email" required><br>
+                <span class="message-error"></span>
+            </label>
+            <div class="register_buttons">
+                <input class="header__a" type="submit" value="Regístrate"><input class="btn2" type="reset" name="reset" value="Limpiar">
+            </div>
         </form>
       </article>
       <footer class="store__footer footer">
