@@ -1,7 +1,7 @@
 import { showMessage } from "./backdrop.js";
 import { validAllInputsOf } from "./valid_input.js";
 
-export async function beforeSend_signIn(form) {
+export async function beforeSendSignIn(form) {
   validAllInputsOf(form);
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -24,12 +24,12 @@ export async function beforeSend_signIn(form) {
     localStorage.setItem(
       import.meta.env.VITE_KEY_STORAGE,
       JSON.stringify(user)
-      );
-      form.reset.click();
-      showMessage("¡Bienvenido!");
+    );
+    form.reset.click();
+    showMessage("¡Bienvenido!");
   });
 }
-export async function beforeSend_register(form) {
+export async function beforeSendRegister(form) {
   validAllInputsOf(form);
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -59,6 +59,22 @@ export async function beforeSend_register(form) {
     form.reset.click();
   });
 }
+
+export async function beforeSendNewProduct(form) {
+  validAllInputsOf(form);
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const NEW_PRODUCT = await createNewProduct({
+      name: form.name.value,
+      price: form.price.value,
+      category: form.category.value,
+      imageUrl: form.imageUrl.value,
+      description: form.description.value,
+    });
+    showMessage(`Agregaste: ${NEW_PRODUCT.name} a la tienda. Muchas gracias.`);
+  });
+}
+// Functions GET, POST
 async function searchUser(userName) {
   try {
     const data = await fetch(import.meta.env.VITE_ID_SESSIONS);
@@ -83,6 +99,36 @@ async function createNewUser({ name, password, email, date, namePerson }) {
   console.log(body);
   try {
     const data = await fetch(import.meta.env.VITE_ID_SESSIONS, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+    });
+    const json = data.json();
+    return json;
+  } catch (error) {
+    console.log(error);
+  }
+}
+async function createNewProduct({
+  name,
+  price,
+  category,
+  imageUrl,
+  description,
+}) {
+  const body = {
+    name,
+    price,
+    category,
+    imageUrl,
+    description,
+    byUser: JSON.parse(localStorage.getItem(import.meta.env.VITE_KEY_STORAGE))
+      .name,
+    created: new Date().toString().match(/[\w\s:]+(?= GMT)/g)[0],
+  };
+  console.log(body);
+  try {
+    const data = await fetch(import.meta.env.VITE_API_PRODUCTS, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(body),

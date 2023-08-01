@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./../public/icon/tie-violet.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script defer type="module" src="addProduct.js"></script>
+  </head>
+  <body>
+    <dialog>
+      <button onclick="this.parentElement.close()">X</button>
+      <h2>MENSAJE</h2>
+    </dialog>
+    <h1>register</h1>
+    <header class="home-search">
+      <nav class="home-search__nav">
+        <span class="icon_fashion">
+          <span class="icon_fashion_img"></span>Tienda <span class="icon_fashion_first-word">Preciazo</span>
+        </span>
+        <input class="home-search__input css-input" type="search" name="button-search" id="btn-search" placeholder="¿Buscas algo?">
+        <a href="./../index.html" class="header__a title">Inicio</a>
+      </nav>
+    </header>
+    <main class="login store">
+      <article class="store__article">
+        <h2>Agrega un nuevo artículo a la tienda</h2>
+        <form class="register">
+            <label>Nombre del producto: <input class="css-input" type="text" name="name" required><br>
+                <span class="message-error"></span>
+            </label>
+            <label>Precio: <input class="css-input" type="number" name="price" required><br>
+                <span class="message-error"></span>
+            </label>
+            <label>¿Qué categoría?
+              <select class="css-input" name="category" id="category" required>
+                <option value="" disabled selected>- Elige una -</option>
+                <option value="electro">Electrónicos</option>
+                <option value="jewelry">Joyería</option>
+                <option value="her">Para ella</option>
+                <option value="him">Para él</option>
+              </select>
+            </label>
+            <label>URL o link de la foto: <input class="css-input" type="url" name="imageUrl" required><br>
+                <span class="message-error"></span>
+            </label>
+            <label>Descripcion: <input class="css-input" type="text" name="description" required><br>
+                <span class="message-error"></span>
+            </label>
+            <div class="register_buttons">
+                <input class="header__a" type="submit" value="Agregar"><input class="btn2" type="reset" name="reset" value="Limpiar">
+            </div>
+        </form>
+      </article>
+      <footer class="store__footer footer">
+        <section class="footer__img">
+          <span class="icon_fashion">
+            <span class="icon_fashion_img"></span>Tienda <span class="icon_fashion_first-word">Preciazo</span>
+          </span>  
+        </section>
+        <section class="footer_details">
+          <ul>
+            <li><a href="support.html#who-are" class="footer__a">Quiénes Somos</a></li>
+            <li><a href="support.html#privacy-policy" class="footer__a">Políticas de Privacidad</a></li>
+            <li><a href="support.html#faq" class="footer__a">Preguntas Frecuentes</a></li>
+            <li><a href="support.html#shipping-returns" class="footer__a">Envíos y Devoluciones</a></li>
+            <li><a href="support.html#support" class="footer__a">Soporte</a></li>
+          </ul>
+        </section>
+        <form class="form" name="formato" method="POST" action="#">
+          <h2 class="form__h2">
+            Hable con nosotros
+            <!-- <code>mathterry25@gmail.com</code>: -->
+          </h2>
+          <input type="text" name="to_name" id="to_name" value="Terry" hidden />
+          <nav class="form__nav">
+            <input type="text"
+              required
+              name="from_name"
+              class="form__input"
+              id="from_name"
+              placeholder=" "
+              pattern="[a-zA-Z ]+"
+            />
+            <span class="form__span">Tu nombre</span>
+            <img loading="lazy" class="form__img form__img_valid" src="./../public/check-solid.svg" alt="">
+            <img loading="lazy" class="form__img form__img_invalid" src="./../public/xmark-solid.svg" alt="">
+          </nav>
+          <nav class="form__nav">
+            <input
+            required
+            name="email_id"
+            class="form__input"
+            id="email_id"
+            type="email"
+            placeholder=" "
+            pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+            />
+            <span class="form__span">Tu correo</span>
+            <img loading="lazy" class="form__img form__img_valid" src="./../public/check-solid.svg" alt="">
+            <img loading="lazy" class="form__img form__img_invalid" src="./../public/xmark-solid.svg" alt="">
+          </nav>
+          <nav class="form__nav">
+            <textarea
+              cols="10"
+              rows="3"
+              required
+              name="message"
+              id="message"
+              placeholder="Comentarios aquí ✅✅✅"
+              class="form__textarea"
+            ></textarea>
+          </nav>
+          <input type="submit" class="header__a" value="Enviar" />
+          <input type="reset" class="header__a" value="Borrar" />
+        </form>
+        <footer class="footer__footer">Desarrollado por Terry I. &copy; | Comunidad ONE</footer>
+      </footer>
+    </main>
+  </body>
+</html>
