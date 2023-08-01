@@ -15,6 +15,7 @@
 @import "./form.css";
 @import "./support.sass";
 @import "./userIn.sass";
+@import "./dialog.sass";
 
 :root {
   /* font-synthesis: none;

@@ -1,0 +1,52 @@
+dialog
+    border: none
+    border-radius: 2rem
+    position: relative
+    // min-height: 70vh
+    width: 50vw
+    background-color: var(--white)
+    padding: 1rem
+    & > *
+        margin-bottom: 1rem
+        color: var(--black)
+    button
+        position: absolute
+        right: 1rem
+        top: 1rem
+        background-color: #aee1ff
+        box-shadow: 1px 1px 3px 0px #0a0c80
+        border-radius: 0.5rem
+        border: none
+        outline: none
+        cursor: pointer
+        font-family: Georgia
+        font-size: 1rem
+        padding: .3rem .7rem
+        font-weight: 400
+        text-align: center
+        &:hover
+            background-image: linear-gradient(to bottom, #8d31e8 5%, #4d23e8 100%)
+            color: var(--white)
+    h2
+        font-size: 2rem
+        text-align: center
+        color: #0090de
+    img
+        width: 270px
+        aspect-ratio: 1/1
+        object-fit: cover
+        border-radius: 1rem
+    h3
+        font-size: 2rem
+        font-weight: 700
+        color: #0090de
+        span
+            font-weight: 400
+            font-style: italic
+            color: #009032
+    p
+        font-size: 1.1rem
+
+dialog::backdrop
+    background-color: none
+    background-image: linear-gradient(130deg, #4d23e899, #8d31e899)
