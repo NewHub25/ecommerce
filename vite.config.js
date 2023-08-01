@@ -17,6 +17,7 @@ export default defineConfig({
         login: resolve(__dirname, "pages/login.html"),
         register: resolve(__dirname, "pages/register.html"),
         car: resolve(__dirname, "pages/car.html"),
+        addProduct: resolve(__dirname, "pages/addProduct.html"),
       },
     },
   },

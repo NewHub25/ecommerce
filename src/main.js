@@ -5,8 +5,8 @@ import { sendEmail } from "./js/form.js";
 import { addClassUserIn, logOut, renameSpan } from "./js/userIn";
 import { buttonAdd } from "./js/buttonAdd";
 
-setInterval(maskImg, 5000);
 window.addEventListener("load", () => {
+  setInterval(maskImg, 5000);
   sendEmail();
   addClassUserIn();
   renameSpan();
