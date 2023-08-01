@@ -8,19 +8,20 @@ export async function fillByCategory() {
     let productsHTML = "";
     for (
       let i = 0;
-      i < limit === "infinite" ? FILTERED_PRODUCTS.length : limit;
+      i < FILTERED_PRODUCTS.length &&
+      (limit === "infinite" || i < parseInt(limit));
       i++
     ) {
       productsHTML += `
 <li class="category_product">
-    <span class="category_btn btn2">Agregar<a class="car"></a></span>
+    <span class="category_btn btn2 buttonInCar" data-id="${FILTERED_PRODUCTS[i].id}">Agregar<a class="car"></a></span>
     <div class="border-moving">
         <img loading="lazy" src="${FILTERED_PRODUCTS[i].imageUrl}" alt="${FILTERED_PRODUCTS[i].name}">
     </div>
     <p>${FILTERED_PRODUCTS[i].name}</p>
-    <span>${FILTERED_PRODUCTS[i].price}</span>
+    <span>${FILTERED_PRODUCTS[i].price} $</span>
     <a
-        onclick="productView(this)"
+        class="buttonView"
         data-category="${FILTERED_PRODUCTS[i].category}"
         data-url="${FILTERED_PRODUCTS[i].imageUrl}"
         data-name="${FILTERED_PRODUCTS[i].name}"
@@ -33,8 +34,9 @@ export async function fillByCategory() {
     }
     section.querySelector(".category__ul").innerHTML = productsHTML.length
       ? productsHTML
-      : "No hay aún productos en esta categoría";
+      : "Aún no hay productos en esta categoría.";
   });
+  clicksInProduct();
 }
 
 async function getAllProducts() {
@@ -45,4 +47,18 @@ async function getAllProducts() {
   } catch (error) {
     console.error(error);
   }
+}
+
+function clicksInProduct() {
+  document.querySelectorAll(".category__ul").forEach((lista) => {
+    if (!lista.children.length) return;
+    lista.addEventListener("click", (e) => {
+      if (e.target.classList.contains("buttonInCar")) {
+        alert("Agregaste un producto con ID: " + e.target.dataset.id);
+      }
+      if (e.target.classList.contains("buttonView")) {
+        alert(`Estás viendo: ${e.target.dataset.name}`);
+      }
+    });
+  });
 }

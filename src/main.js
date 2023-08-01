@@ -4,6 +4,7 @@ import { maskImg } from "./js/mask-img.js";
 import { sendEmail } from "./js/form.js";
 import { addClassUserIn, logOut, renameSpan } from "./js/userIn";
 import { buttonAdd } from "./js/buttonAdd";
+import { fillByCategory } from "./js/fillProducts";
 
 window.addEventListener("load", () => {
   setInterval(maskImg, 5000);
@@ -13,4 +14,5 @@ window.addEventListener("load", () => {
   document.getElementById("buttonAdd").addEventListener("click", (e) => {
     buttonAdd(e.currentTarget, "./pages/addProduct.html", "./pages/login.html");
   });
+  fillByCategory();
 });

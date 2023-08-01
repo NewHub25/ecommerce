@@ -72,6 +72,7 @@ export async function beforeSendNewProduct(form) {
       description: form.description.value,
     });
     showMessage(`Agregaste: ${NEW_PRODUCT.name} a la tienda. Muchas gracias.`);
+    form.reset.click();
   });
 }
 // Functions GET, POST
