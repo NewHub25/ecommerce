@@ -1,3 +1,5 @@
+import { clicksInProduct } from "./modifyOwnCar";
+
 export async function fillByCategory() {
   const ALL_PRODUCTS = await getAllProducts();
   document.querySelectorAll(".category__section").forEach((section) => {
@@ -39,7 +41,7 @@ export async function fillByCategory() {
   clicksInProduct();
 }
 
-async function getAllProducts() {
+export async function getAllProducts() {
   try {
     const data = await fetch(import.meta.env.VITE_API_PRODUCTS);
     const json = await data.json();
@@ -47,18 +49,4 @@ async function getAllProducts() {
   } catch (error) {
     console.error(error);
   }
-}
-
-function clicksInProduct() {
-  document.querySelectorAll(".category__ul").forEach((lista) => {
-    if (!lista.children.length) return;
-    lista.addEventListener("click", (e) => {
-      if (e.target.classList.contains("buttonInCar")) {
-        alert("Agregaste un producto con ID: " + e.target.dataset.id);
-      }
-      if (e.target.classList.contains("buttonView")) {
-        alert(`Estás viendo: ${e.target.dataset.name}`);
-      }
-    });
-  });
 }

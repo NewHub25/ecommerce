@@ -9,10 +9,15 @@ import { fillByCategory } from "./js/fillProducts";
 window.addEventListener("load", () => {
   setInterval(maskImg, 5000);
   sendEmail();
+
+  // When user is in
   addClassUserIn();
   renameSpan();
+
+  // Si va a agregar algo debe iniciar sesión
   document.getElementById("buttonAdd").addEventListener("click", (e) => {
     buttonAdd(e.currentTarget, "./pages/addProduct.html", "./pages/login.html");
   });
+  
   fillByCategory();
 });
