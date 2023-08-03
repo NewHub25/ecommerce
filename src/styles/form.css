@@ -1,6 +1,7 @@
 .form {
   width: min(90%, 400px);
   --agua: aqua;
+  margin-bottom: 3rem;
 }
 .form > * {
   margin-bottom: 1rem;

@@ -37,7 +37,19 @@
         text-align: right
         margin: 1rem 0
         vertical-align: top
-        input, select, textarea
+        input, select, textarea, option
             vertical-align: top
             width: 60%
             font-size: 1.1rem
+
+@media (max-width: 768px)
+    .session
+        width: min(90%, 400px)
+    .register
+        width: min(90%, 400px)
+        label
+            outline: 1px solid
+            width: 100%
+            input, select, textarea
+                display: block
+                width: 90%

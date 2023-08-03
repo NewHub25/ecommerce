@@ -15,7 +15,7 @@
     .banner__div
         position: absolute
         left: 25vw
-        bottom: 5%
+        bottom: 20%
         .banner__p
             color: var(--black)
             width: 40vw
@@ -29,3 +29,15 @@
 @keyframes moveImgBanner
     to
         object-position: center calc( 10% + var(--position-img) )
+
+@media (max-width: 992px)
+    .banner
+        position: absolute
+        width: 100%
+        top: 0
+        height: 100vh
+        height: 100dvh
+        .banner__div
+            position: absolute
+            left: 25vw
+            bottom: 40%

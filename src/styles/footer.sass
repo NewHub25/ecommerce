@@ -1,12 +1,15 @@
 .footer
     display: flex
-    justify-content: space-evenly
+    justify-content: center
     align-items: center
     letter-spacing: .1rem
     .footer__img
         padding: 2rem
+        margin-bottom: 2rem
     .footer_details
         font-size: 1.2rem
+        margin-right: 1rem
+        margin-bottom: 2rem
         li
             margin-bottom: 2rem
             text-align: right
@@ -19,3 +22,7 @@
         padding: 1rem
         &::selection
             background-color: var(--yellow)
+
+@media (max-width: 992px)
+    .footer
+        flex-flow: column nowrap

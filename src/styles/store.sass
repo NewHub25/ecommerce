@@ -7,14 +7,13 @@
         background-color: var(--background, #fff)
     .store__aside
         width: 15%
-        top: 0
         box-shadow: -2px 0px 5px 1px #3333
     .store__main
         width: 65%
         box-shadow: 2px 0px 5px 1px #3333
     .store__footer
         width: 80%
-        height: 40rem
+        min-height: 40rem
         background-color: #0090de
         box-shadow: 2px 0px 5px 1px #3333, -2px 0px 5px 1px #3333
         position: relative
@@ -31,3 +30,18 @@
             font-size: 2rem
             margin: 0 auto 2rem
             font-style: italic
+
+@media (max-width: 768px)
+    .store
+        .store__aside
+            width: 100%
+            min-height: 25vh
+        .store__main
+            width: 100%
+        .store__footer
+            width: 100%
+            background-color: #0090de
+            box-shadow: 2px 0px 5px 1px #3333, -2px 0px 5px 1px #3333
+            position: relative
+        .store__article
+            width: 100%

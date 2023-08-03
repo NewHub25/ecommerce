@@ -30,7 +30,7 @@
         align-items: center
         gap: .7rem
         li
-            width: 70%
+            width: max(70%, 100px)
             & > *
                 width: 100%
         .menu__li_hide
@@ -42,3 +42,16 @@
             gap: .5rem
             .menu__li_hide
                 display: block
+
+@media (max-width: 768px)
+    .menu__article
+        position: relative
+        .menu__ul
+            flex-flow: row wrap
+            justify-content: center
+            height: 1rem
+            li
+                width: auto
+            &.active
+                li:not(.menu__li_hide)
+                    display: none
