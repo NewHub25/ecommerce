@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./../public/icon/game.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Electr&oacute;nicos</title>
+    <title>Tu carrito</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script defer type="module" src="./categories.js"></script>
+    <script defer type="module" src="car.js"></script>
     <style>
       body{
         --background: #ff0;
@@ -17,6 +17,7 @@
     </style>
   </head>
   <body>
+    <dialog></dialog>
     <h1>car</h1>
     <header class="home-search">
       <nav class="home-search__nav">
@@ -34,11 +35,7 @@
     <section class="store">
       <aside class="menu store__aside">
         <article class="menu__article">
-          <div class="menu__div">
-            <a class="car" href="#"></a>
-            <span class="menu__span">0 items</span>
-          </div>
-          <ul class="menu__ul">
+          <ul class="menu__ul" style="margin-top: 2rem;">
             <li><a href="./../index.html" class="btn2 title">Inicio</a></li>
             <li class="menu__li_show"><span class="btn2 title">Categor&iacute;as</span></li>
             <li class="menu__li_hide"><a href="electro.html" class="btn2 title">electr&oacute;nicos</a></li>
@@ -54,41 +51,10 @@
       <main class="store__main category">
         <section class="category__section">
           <header class="category__header">
-            <h2>Tus productos</h2>
+            <h2>Tu carrito</h2>
+            <span></span>
           </header>
           <ul class="category__ul">
-            <li class="category_product">
-              <div class="border-moving"><img loading="lazy" src="./../public/img/melvin-buezo-shoes.jpg" alt="Product 1"></div>
-              <p>nombre producto 1</p>
-              <span>precio $123</span><a href="#">ver producto &rarr;</a></li>
-            <li class="category_product">
-              <div class="border-moving"><img loading="lazy" src="./../public/img/melvin-buezo-shoes.jpg" alt="Product 2"></div>
-              <p>nombre producto 2</p>
-              <span>precio $123</span><a href="#">ver producto &rarr;</a></li>
-            <li class="category_product">
-              <div class="border-moving"><img loading="lazy" src="./../public/img/melvin-buezo-shoes.jpg" alt="Product 3"></div>
-              <p>nombre producto 3</p>
-              <span>precio $123</span><a href="#">ver producto &rarr;</a></li>
-            <li class="category_product">
-              <div class="border-moving"><img loading="lazy" src="./../public/img/melvin-buezo-shoes.jpg" alt="Product 4"></div>
-              <p>nombre producto 4</p>
-              <span>precio $123</span><a href="#">ver producto &rarr;</a></li>
-            <li class="category_product">
-              <div class="border-moving"><img loading="lazy" src="./../public/img/melvin-buezo-shoes.jpg" alt="Product 4"></div>
-              <p>nombre producto 4</p>
-              <span>precio $123</span><a href="#">ver producto &rarr;</a></li>
-            <li class="category_product">
-              <div class="border-moving"><img loading="lazy" src="./../public/img/melvin-buezo-shoes.jpg" alt="Product 4"></div>
-              <p>nombre producto 4</p>
-              <span>precio $123</span><a href="#">ver producto &rarr;</a></li>
-            <li class="category_product">
-              <div class="border-moving"><img loading="lazy" src="./../public/img/melvin-buezo-shoes.jpg" alt="Product 4"></div>
-              <p>nombre producto 4</p>
-              <span>precio $123</span><a href="#">ver producto &rarr;</a></li>
-            <li class="category_product">
-              <div class="border-moving"><img loading="lazy" src="./../public/img/melvin-buezo-shoes.jpg" alt="Product 4"></div>
-              <p>nombre producto 4</p>
-              <span>precio $123</span><a href="#">ver producto &rarr;</a></li>
           </ul>
         </section>
       </main>

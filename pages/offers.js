@@ -2,14 +2,14 @@ import "./../src/styles/index.css";
 import "../src/js/toggle-menu.js";
 import { sendEmail } from "../src/js/form.js";
 import { addClassUserIn, renameSpan } from "../src/js/userIn";
-import {getAllProducts } from "../src/js/fillProducts";
-import { clicksInProduct } from "../src/js/modifyOwnCar";
+import { getAllProducts } from "../src/js/fillProducts";
+import { clicksInProduct, editNumberCarHTML } from "../src/js/modifyOwnCar";
 
 window.addEventListener("load", () => {
   sendEmail();
   addClassUserIn();
   renameSpan();
-
+  editNumberCarHTML();
   putRandomProducts(document.querySelector(".category__ul"));
 });
 
@@ -52,5 +52,5 @@ async function putRandomProducts(node) {
       `;
   }
   node.innerHTML = productsHTML.length ? productsHTML : "Aún no hay ofertas.";
-  clicksInProduct()
+  clicksInProduct();
 }

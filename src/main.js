@@ -5,6 +5,7 @@ import { sendEmail } from "./js/form.js";
 import { addClassUserIn, logOut, renameSpan } from "./js/userIn";
 import { buttonAdd } from "./js/buttonAdd";
 import { fillByCategory } from "./js/fillProducts";
+import { editNumberCarHTML } from "./js/modifyOwnCar";
 
 window.addEventListener("load", () => {
   setInterval(maskImg, 5000);
@@ -20,4 +21,5 @@ window.addEventListener("load", () => {
   });
   
   fillByCategory();
+  editNumberCarHTML()
 });
