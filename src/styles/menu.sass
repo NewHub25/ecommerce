@@ -1,6 +1,6 @@
 .menu__article
     position: sticky
-    top: 3rem
+    // top: 3rem
     .menu__div
         height: 5rem
         display: flex
@@ -55,3 +55,8 @@
             &.active
                 li:not(.menu__li_hide)
                     display: none
+
+@media (max-width: 300px)
+    .menu__article
+        position: relative
+        height: 15rem
