@@ -29,6 +29,7 @@
   --black: #333;
   --white: #eee;
   --yellow: #ffe990;
+  scroll-behavior: smooth;
 }
 * {
   box-sizing: border-box;
